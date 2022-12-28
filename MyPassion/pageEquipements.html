@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <title>Equipements</title>
+       <link rel="stylesheet" href="style.css">
+       <script src="https://kit.fontawesome.com/2d8dc5246d.js" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> 
+       <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    </head>
+    <body>
+        <script src="mode.js"></script>
+        <nav>
+            <div>
+                <ul>
+                    <li>
+                        <a class="navbar-brand" href="index.html">Menu</a>
+                    </li>
+                    <li>
+                        <a>Catégories</a>
+                        <ul>
+                            <li><a href="pageFPS.html">FPS</a></li>
+                            <li><a href="pageTPS.html">TPS</a></li>
+                            <li><a href="pageStrTpT.html">Stratégie tour par tour</a></li>
+                            <li><a href="pageReflexion.html">Réflexion</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="pageEquipements.html">Equipements</a>
+                    </li>
+                    <li>
+                        <button class="btn" onclick="darkMode()"><i class="fa-solid fa-sun" id="btnMode"></i></button>
+                    </li>
+                    <li>
+                        Color
+                        <div class="color-picker"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <h1>
+                Equipements
+            </h1>
+            <div style="overflow-x: auto;">
+                <table>
+                    <tr>
+                        <th>Equipements</th>
+                        <th>Durée d'utilisation</th>
+                        <th>Portabilité</th>
+                        <th>Qualité des jeux</th>
+                        <th>Durée de vie des jeux</th>
+                    </tr>
+                    <tr>
+                        <td>PC tour</td>
+                        <td>Prise électrique</td>
+                        <td>Déménagement</td>
+                        <td>Ultra</td>
+                        <td>30~150h</td>
+                    </tr>
+                    <tr>
+                        <td>PC portable</td>
+                        <td>Prise électrique</td>
+                        <td>Portable</td>
+                        <td>Moyenne~élevée</td>
+                        <td>30~150h</td>
+                    </tr>
+                    <tr>
+                        <td>PS4</td>
+                        <td>Prise électrique</td>
+                        <td>Déménagement</td>
+                        <td>Moyenne~élevée</td>
+                        <td>30~50h</td>
+                    </tr>
+                    <tr>
+                        <td>Téléphone</td>
+                        <td>2~4h</td>
+                        <td>Dans la poche</td>
+                        <td>Faible~moyenne</td>
+                        <td>5~20min</td>
+                    </tr>
+                    <tr>
+                        <td>Gameboy/DS</td>
+                        <td>4~10h</td>
+                        <td>Dans la poche</td>
+                        <td>Moyenne</td>
+                        <td>10~30h</td>
+                    </tr>
+                    <tr>
+                        <td>Oculus Quest 2(standalone)</td>
+                        <td>4~6h</td>
+                        <td>Portable</td>
+                        <td>Moyenne</td>
+                        <td>6~20h</td>
+                    </tr>
+                    <tr>
+                        <td>Oculus Quest 2(PCVR)</td>
+                        <td>4~8h</td>
+                        <td>Déménagement</td>
+                        <td>Moyenne~élevée</td>
+                        <td>10~30h</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    <div>
+        <p>
+            Choisi ton équipement préféré :
+        </p>
+        <form action="pageValide.html">
+            <input type="radio" id="PCTour" name="fav_equip" value="PC tour">
+            <label for="PCTour">PC tour</label><br>
+            <input type="radio" id="PCPortable" name="fav_equip" value="PC portable">
+            <label for="PCPortable">PC portable</label><br>
+            <input type="radio" id="PS4" name="fav_equip" value="PS4">
+            <label for="PS4">PS4</label><br>
+            <input type="radio" id="Telephone" name="fav_equip" value="Telephone">
+            <label for="Telephone">Téléphone</label><br>
+            <input type="radio" id="Gameboy" name="fav_equip" value="Gameboy">
+            <label for="Gameboy">Gameboy/DS</label><br>
+            <input type="radio" id="Quest2Std" name="fav_equip" value="Quest2 standalone">
+            <label for="Quest2Std">Quest 2 standalone</label><br>
+            <input type="radio" id="Quest2PCVR" name="fav_equip" value="Quest2 PCVR">
+            <label for="Quest2PCVR">Quest 2 PCVR</label><br><br>
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+            
+    <script src="colorPicker.js"></script>
+    </body>
+           
+</html>

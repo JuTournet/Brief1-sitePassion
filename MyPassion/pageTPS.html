@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <title>TPS</title>
+       <link rel="stylesheet" href="style.css">
+       <script src="https://kit.fontawesome.com/2d8dc5246d.js" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> 
+       <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    </head>
+    <body>
+        <script src="mode.js"></script>
+        <nav>
+            <div>
+                <ul>
+                    <li>
+                        <a class="navbar-brand" href="index.html">Menu</a>
+                    </li>
+                    <li>
+                        <a>Catégories</a>
+                        <ul>
+                            <li><a href="pageFPS.html">FPS</a></li>
+                            <li><a href="pageTPS.html">TPS</a></li>
+                            <li><a href="pageStrTpT.html">Stratégie tour par tour</a></li>
+                            <li><a href="pageReflexion.html">Réflexion</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="pageEquipements.html">Equipements</a>
+                    </li>
+                    <li>
+                        <button class="btn" onclick="darkMode()"><i class="fa-solid fa-sun" id="btnMode"></i></button>
+                    </li>
+                    <li>
+                        Color
+                        <div class="color-picker"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <h1>
+                TPS (Third Person Shooter)
+            </h1>
+            <h3>
+                Définition
+            </h3>
+            <p>
+                Le jeu de tir à la troisième personne (TPS ou jeu de tir en vue objective) est un type de jeu vidéo d'action en 3D
+                 dans lequel le personnage du joueur est visible à l'écran pendant la partie. <br>
+                Le plus souvent, la vue est prise à l'arrière du personnage. Le but de ces jeux consiste principalement à tirer. <br>
+                Les jeux de tir à la troisième personne permettent aux joueurs de voir plus clairement la zone entourant l'avatar. <br>
+                Ce point de vue améliore l'interaction entre le caractère et son environnement. 
+                Cette perspective est également adaptée pour interagir avec des éléments autour du personnage et effectuer certaines actions, 
+                comme sauter sur des plates-formes, s'engager dans un combat rapproché ou encore conduire un véhicule.
+            </p>
+            <h5>
+                Examples de jeux dans cette catégorie : 
+            </h5>
+            <ul>
+                <li>PUBG</li>
+                <img src="images/PUBG.jpg" alt="PUBG" style="width:500px;height:300px;">
+                <li>GTA</li>
+                <img src="images/GTA.jpg" alt="GTA" style="width:500px;height:300px;">
+                <li>Horizon zero dawn</li>
+                <img src="images/HZD.png" alt="Horizon zero dawn" style="width:500px;height:300px;">
+                <li>Monster Hunter</li>
+                <img src="images/MH.jpg" alt="Monster hunter" style="width:500px;height:300px;">
+            </ul>
+        </div>
+        <script src="colorPicker.js"></script>
+    </body>
+</html>

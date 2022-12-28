@@ -1,0 +1,185 @@
+nav {
+  background-color: #e64a19;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  display: inline-block;
+  background-color: #e64a19;
+}
+
+nav a {
+  display: block;
+  padding: 0 49px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+/* Fisrt level Dropdown */
+nav ul ul li {
+	width:200px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+}
+/*font of dropdown*/
+nav ul ul li a {
+  
+  font-size: 20px;
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+/*Table border*/
+table, th, td {
+  border: 1px solid;
+  padding: 15px;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/*Tavle first row*/
+th {
+  background-color:rgb(63, 197, 63);
+}
+
+/*Table alternation de blanv et gris*/
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(odd) {background-color: #cacaca;}
+
+/*From at the bottom of the screen*/
+div.fixed{
+  position: fixed;
+  bottom: 0;
+  left: 30%;
+  border: 1px solid;
+  padding: 10px;
+}
+
+/*background*/
+body{
+  /*background-image: url("images/background.png");
+  background-attachment: fixed;*/
+  filter: invert(0%);
+}
+
+.imageBack{
+  background-image: url("images/background.png");
+  background-attachment: fixed;
+}
+/** Dark CSS */
+
+.dark {
+  filter: invert(100%);
+}
+
+.dark button {
+  background: #144098;
+  color: #fff;
+}
+
+.btn {
+  border: none;
+  color: rgb(88, 88, 88);
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Switch pour le fun */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Show image caché */
+.showImage{
+  display: block;
+}
+
+/* Hide image */
+.hideImage{
+  display: none;
+}

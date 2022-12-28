@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title>Menu principal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2d8dc5246d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> 
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <script src="mode.js"></script>
+</head>
+
+<body class="imageBack">
+    <nav id="navbar">
+        <div>
+            <ul>
+                <li>
+                    <a class="navbar-brand" href="index.html">Menu</a>
+                </li>
+                <li>
+                    <a>Catégories</a>
+                    <ul>
+                        <li><a href="pageFPS.html">FPS</a></li>
+                        <li><a href="pageTPS.html">TPS</a></li>
+                        <li><a href="pageStrTpT.html">Stratégie tour par tour</a></li>
+                        <li><a href="pageReflexion.html">Réflexion</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="pageEquipements.html">Equipements</a>
+                </li>
+                <li>
+                    <button class="btn" onclick="darkMode()"><i class="fa-solid fa-sun" id="btnMode"></i></button>
+                </li>
+                <li>
+                    Color
+                    <div class="color-picker"></div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <h1>
+            Ma passion jeux vidéo
+        </h1>
+        <p>
+            Ce site à pour but de présenter ma passion des jeux vidéo.
+            Il est divisé en plusieurs parties : les différentes catégories de jeux et les types d'équipements<br><br><br>
+        </p>
+        <label class="switch">
+            <input type="checkbox" onclick="showImage()">
+            <span class="slider round"></span>
+        </label><br>
+        <img src="images/gamer.gif" alt="Gamer" id="imageHidden" class="hideImage">
+        <div>
+            <h2>
+                Catégories auxquelles je joue
+            </h2>
+            <ul>
+                <li><a href="pageFPS.html">FPS</a></li>
+                <li><a href="pageTPS.html">TPS</a></li>
+                <li><a href="pageStrTpT.html">Stratégie tour par tour</a></li>
+                <li><a href="pageReflexion.html">Réflexion</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>
+                <a href="pageEquipements.html">Types d'équipements que j'utilise</a>
+            </h2>
+        </div>
+    </div>
+    <script src="colorPicker.js"></script>
+</body>
+
+</html>
